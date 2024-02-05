@@ -7,7 +7,7 @@ This processor block was written for the [Digilent Nexys 4 board](https://digile
 ## Setup
 The Verilog code was sucessfully sythesized and tested with the Artix-7 FPGA using the [Xilinx Vivado IDE](https://www.xilinx.com/products/design-tools/vivado.html). I would recommend creating a new project with the XC7A100T-1CSG324C FPGA target and copying the files into its source directory. [The top level file](sources/top_level.v) should be set as the top level block before running simulations or synthesis.
 
-# Results
+## Results
 The process follows the standard AM modulation and demodulation chains. For modulation, the input signal is offset by its amplitude then multiplied with a high frequency carrier. For demodulation, the signal is rectified, then passed through an envelope detector, then low and high pass filters to remove noise and the DC offset.
 
 ![](graphics/results_1.png)
